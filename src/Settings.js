@@ -14,7 +14,7 @@ const Settings = (props) => {
 
             
             </h2>
-             <Popup basic header={props.setting} position="bottom center" content= {props.definition} trigger={<h2>{props.setting}</h2>} />
+             <Popup basic header={props.setting} position="bottom left" content= {props.definition} trigger={<h2>{props.setting}</h2>} />
         </div>
     )
 }

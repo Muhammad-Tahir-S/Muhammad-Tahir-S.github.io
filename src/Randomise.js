@@ -28,7 +28,7 @@ function Randomise () {
 
 
     useEffect(() => {
-        fetch("http://api.datamuse.com/words?rel_gen=person&topics=nature&topics=occupation")
+        fetch("https://api.datamuse.com/words?rel_gen=person&topics=nature&topics=occupation")
         .then(res => res.json())
         .then(data => {
             setCharactersArray(data.map(x => x.word))
@@ -96,7 +96,7 @@ function Randomise () {
     }
     
     useEffect(() => {
-        fetch("http://api.datamuse.com/words?rel_gen=do&topics=nature&topics=Verb")
+        fetch("https://api.datamuse.com/words?rel_gen=do&topics=nature&topics=Verb")
         .then(res => res.json())
         .then(data => {
             setVerbsArray(data.map(x => x.word))

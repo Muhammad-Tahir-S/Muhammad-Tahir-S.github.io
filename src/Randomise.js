@@ -60,7 +60,7 @@ function Randomise () {
     }
     
     useEffect(() => {
-        fetch("http://api.datamuse.com/words?rel_gen=building&topics=nature&topics=east")
+        fetch("https://api.datamuse.com/words?rel_gen=building&topics=nature&topics=east")
         .then(res => res.json())
         .then(data => {
             setSettingsArray(data.map(x => x.word))

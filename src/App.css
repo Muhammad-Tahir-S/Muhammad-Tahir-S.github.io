@@ -1,38 +1,65 @@
+
 .App {
+  min-height: 100%;
   text-align: center;
+  background: url(./backgroundImg.jpg) center top no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100vh;
+  color: #FFCDA2;
+  font-family: 'Antonio', sans-serif;
+    overflow: hidden; /* Hide scrollbars */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.welcome h1 {
+  font-family: 'Antonio', sans-serif;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.welcome-text {
+  font: normal normal 500 15px/22px 'Antonio', sans-serif;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#welcome{
+  padding-right: 1em;
+  padding-left: 1em;
 }
 
-.App-link {
-  color: #61dafb;
+
+.item-header{
+  padding-bottom: 6px;
+  border-bottom: 5px solid #6dffff  ;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ui.icon.button:not(:hover) {
+  color:  #6dffff ;
+  background-color: #264653 ;
 }
+
+.ui.icon.button:hover {
+  color:  #264653 ;
+  background: #6dffff ;
+}
+
+div.random-btn{
+  margin-top: 2em;
+  margin-bottom: 1.2em;
+}
+
+div.random-btn :not(:hover){
+  color: #6dffff  !important;
+  background: #264653 !important
+}
+
+div.random-btn :hover{
+  color: black !important;
+  background: #6dffff  !important
+}
+ul{
+  list-style: none;
+  margin-left: -54px;
+}
+
+

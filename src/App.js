@@ -1,25 +1,36 @@
-import logo from './logo.svg';
 import './App.css';
+import React, {useState, useEffect} from 'react'
+import Welcome from './Welcome'
+import Footer from './Footer'
+import Randomise from './Randomise'
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+  const [isClicked, setIsClicked] = useState(false)
+  function handleisClicked(){
+    setIsClicked(true)
+  }
+  
 
-export default App;
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
+return (
+    isClicked ? 
+    <div className='App'>  
+        
+      <Randomise />
+      <br/>
+      <br/>
+      <br/>
+       <Footer />
+    </div>
+
+   :   
+    <div className="App">
+      <Welcome clicked={()=>handleisClicked()}/>       
+    </div>
+)  
+}
+export default App

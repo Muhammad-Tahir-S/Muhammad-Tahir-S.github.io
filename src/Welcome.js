@@ -31,7 +31,7 @@ function Header (props){
         <section className="welcome">
         <animated.div style={fadeUp}>
             <div className="logo">
-                <animated.h1 className="welcome" style={fadeIn1}>MT's WRITING <br />PROMPT</animated.h1>         
+                <animated.h1 className="welcome" style={fadeIn1}>MT's WRITING <br />PROMPT GENERATOR</animated.h1>         
             </div>
             <br/>
             <animated.p style={fadeIn2} className="welcome">

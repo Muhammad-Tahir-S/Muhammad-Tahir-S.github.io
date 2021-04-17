@@ -13,8 +13,9 @@ function App() {
   
 
   useEffect(() => {
-    window.scrollTo(0, 0)
+    document.title = "Writing Prompt Generator"
   }, [])
+  
 
 return (
     isClicked ? 
